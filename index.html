@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Linking to local css files-->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--Linking to Bootstrap API-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--Linking to JQuery API-->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!--Linking to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+</head>
+<!--Attaching local javascript to html-->
+<script src="assets/javascript/game.js"></script> 
+<!--Page Title-->
+<title>Rock & Roll Trivia</title>
+</head>
+	<!-- Body begins - all contents and visuals start-->
+	<body>
+		<div class="row">
+			<!--Creating a div class and id "banner" for css style reference-->
+			<div class ="col-md-12" id="banner">
+				<!--Inserting main logo within the header (#banner)-->
+				<img src="assets/images/rocknroll.png" alt="logo">
+				<!--Inserting a "begin" button using bootstrap that functions with javascript-->
+	  			<button type="button" class="btn btn-danger" id="begin">Begin - Rock & Roll Trivia</button>   
+				</div>
+			</div>
+		</div>
+		<!--Inserting div defining id "scores" to reference in javascript-->
+		<div class="row" id="scores">	
+		</div>
+		<!--Inserting div defininf id "questionForm" to reference in javascript-->
+		<div class="row" id="questionForm">
+			<!--Questions form div begins here-->
+			<div class ="col-md-2"></div>
+			<div class ="col-md-8">
+				<ol>
+					<br>
+					<li>Which of these bands pioneered heavy metal and considered the fathers of "stoner rock"?</li>
+						<label><input type="radio" name="question1" value="lynyrd">Lynyrd Skynyrd</label>
+						<label><input type="radio" name="question1" value="blacksabbath">Black Sabbath</label>
+						<label><input type="radio" name="question1" value="whitneyhouston">Whitney Houston</label>
+						<br><br>
+					<li>What band composed the hit song "Smoke On The Water"?</li>
+						<label><input type="radio" name="question2" value="foghat">Foghat</label>
+						<label><input type="radio" name="question2" value="deeppurple">Deep Purple</label>
+						<label><input type="radio" name="question2" value="metallica">Metallica</label>
+						<label><input type="radio" name="question2" value="beibs">Justin Beiber</label>
+						<br><br>
+					<li>Angus Young is the keyboardist for AC/DC, True or False: </li>
+						<label><input type="radio" name="question3" value="true">True</label>
+						<label><input type="radio" name="question3" value="false">False</label>
+						<br><br>
+					<li>Who first made the "devil horns" hand gesture as a rock and roll icon?</li>
+						<label><input type="radio" name="question4" value="billyjoel">Billy Joel</label>
+						<label><input type="radio" name="question4" value="slayer">Slayer</label>
+						<label><input type="radio" name="question4" value="lambofgod">Lamb of God</label>
+						<label><input type="radio" name="question4" value="dio">Dio</label>
+						<br><br>
+					<li>Randy Rhodes auditioned for which of these musicians?</li>
+						<label><input type="radio" name="question5" value="ozzy">Ozzy Osbourne</label>
+						<label><input type="radio" name="question5" value="jonhlennon">John Lennon</label>
+						<label><input type="radio" name="question5" value="bonjovi">Bon Jovi</label>
+						<label><input type="radio" name="question5" value="mustaine">Dave Mustaine</label>
+						<br><br>
+					<li>This band took over the 90's with the mainstream radio hit "Smells Like Teen Spirit".</li>
+						<label><input type="radio" name="question6" value="soundgarden">Soundgarden</label>
+						<label><input type="radio" name="question6" value="alice">Alice In Chains</label>
+						<label><input type="radio" name="question6" value="nirvana">Nirvana</label>
+						<label><input type="radio" name="question6" value="pearljam">Pearl Jam</label>
+						<br><br>
+					<li>Who famously sang the words " S'cuse Me While I Kiss The Sky... "?</li>
+						<label><input type="radio" name="question7" value="drake">Drake</label>
+						<label><input type="radio" name="question7" value="bobdylan">Bob Dylan</label>
+						<label><input type="radio" name="question7" value="hendrix">Jimi Hendrix</label>
+						<label><input type="radio" name="question7" value="janis">Janis Joplin</label>
+						<br><br>
+					<li>Which musician had roots in Asbury Park, NJ?</li>
+						<label><input type="radio" name="question8" value="bonjovi">Bon Jovi</label>
+						<label><input type="radio" name="question8" value="bruce">Bruce Springsteen</label>
+						<label><input type="radio" name="question8" value="jackson">Michael Jackson</label>
+						<label><input type="radio" name="question8" value="dimebag">Dimebag Darrel</label>	
+						<br><br>
+					<li>Which southern califonia band did Bradley Nowell front in?</li>
+						<label><input type="radio" name="question9" value="sublime">Sublime</label>
+						<label><input type="radio" name="question9" value="socialD">Social Distortion</label>
+						<label><input type="radio" name="question9" value="jackjohnson">Jack Johnson</label>
+						<label><input type="radio" name="question9" value="tupac">Tupac</label>
+						<br><br>
+					<li>This artist is most affiliated with pioneering "punk rock" music and frequented the late-venue CBGBs?</li>
+						<label><input type="radio" name="question10" value="greenday">Green Day</label>
+						<label><input type="radio" name="question10" value="newfoundglory">New Found Glory</label>
+						<label><input type="radio" name="question10" value="ramones">The Ramones</label>
+						<label><input type="radio" name="question10" value="blackflag">Black Flag</label>
+						<br><br>
+					<li>Which band had an album named "The Dark Side of The Moon"? </li>
+						<label><input type="radio" name="question11" value="band">The Band</label>
+						<label><input type="radio" name="question11" value="pinkfloyd">Pink Floyd</label>
+						<label><input type="radio" name="question11" value="gunsnroses">Guns N Roses</label>
+						<label><input type="radio" name="question11" value="ratm">Rage Against the Machine</label>
+						<br><br>
+					<li>*BONUS QUESTION* Which of these "Is For The Children"?</li>
+						<label><input type="radio" name="question12" value="wutangclan">WU-TANG CLAN</label>
+						<label><input type="radio" name="question12" value="nwa">N.W.A</label>
+						<label><input type="radio" name="question12" value="biggiesmalls">The Notorious B.I.G</label>
+						<label><input type="radio" name="question12" value="lamar">Kendrik Lamar</label>
+					</ol>						
+			</div>
+			<div class ="col-md-2"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+	background-image: url("bguitar.jpg");
+}
+
+.logo {
+	width: 30% ;
+ 	margin-left: -15%;
+}
+
+header {
+	font-size: 50px;
+}
+
+#banner {
+	background-image: url("bgrocker.jpg");
+	color:white;
+	text-align: center;
+}
+
+#display {
+	color:white;
+	text-align: center;
+	font-size: 40px;
+	background-color: black;
+}
+
+#questionForm {
+	width: 50%;
+	height: 100%;
+	margin-left: 260px;
+	background-color:whitesmoke;
+	color: black;
+	margin-bottom: 100px;
+	font-size: 20px;
+	opacity: 0.8;
+	font-family: 'Rock Salt', cursive;
+	font-style: bolder;
+}
+
+#scores {
+	background-color: white;
+	font-family: 'Rock Salt', cursive;
+	width:50%;
+	height:50%;
+	margin-left: 260px;
+	color: #00004d;
+	font-size: 50px;
+	margin-top: 10px;
+	opacity: 0.5;
+}
+
+.counter {
+	color: black;
+	margin-left:20%;
+}

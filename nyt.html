@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang = "eng-us">
+<head>
+    <meta charset="UTF-8">
+    <title>NYT Seach</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class = "container">
+    <div class=" text-center jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+    <div class="card" id = "search-card">
+        <div class="card-header">
+              Search Parameters
+        </div>
+    
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Search Term:</label>
+                <input type="text" id="search-term" class="form-control" placeholder="Enter Keyword">
+                </div>
+                <div class = "form-group">
+                    <label for="userSelection">Number of Records to Retreive:</label>
+                    <select class="form-control" id="records-number">
+                        <option value = "1opt">1</option>
+                        <option value = "2opt">2</option>
+                        <option value = "3opt">3</option>
+                        <option value = "4opt">4</option>
+                        <option value = "5opt">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <label for="start-year">Start Year: </label>
+                <input type="text" class="form-control" id="start-year" placeholder="Start Year">
+                </div>
+                <div class="form-group">
+                <label for="end-year">End Year: </label>
+                <input type="text" class="form-control" id="end-year" placeholder="End Year">
+                </div>
+            </form>
+            <button class="btn btn-primary" id="sub-button"> Submit</button>
+            <button class="btn btn-primary" id="reset-button">Reset</button>
+        </div><!--card body-->
+    </div><!--card-->
+    <div class="card" id="result-card">
+        <div class="card-header">
+              Top Articles
+        </div>
+        <div class="card-body">
+              <div id = "results-div">Results go Here</div>
+        </div>
+    </div>
+</div><!--container-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    $("#sub-button").on("click", function(){
+        console.log("sub button works")
+    })
+    $("#reset-button").on("click", function(){
+        console.log("reset button works")
+    })
+    $("#sub-button").on("click", function(){
+        console.log("sub button works")
+        var searchTerm = $("#search-term").val()
+        console.log(searchTerm)
+        var searchTerm = $(this).attr("search-term");
+        console.log(searchTerm);
+        var recordCount = $(this).attr("records-number");
+        console.log(recordCount);
+        var startDate = $(this).attr("start-year");
+        console.log(startDate);
+        var endDate = $(this).attr("end-year");
+        console.log(endDate);
+        var results = $(this).attr("results-div");
+        console.log(results);
+        var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=d4fe7d5f1a9d4bb9bf15fcba0dd5f5f4:0:74623931&q=" + searchTerm + "&begin_date=" + startDate + "&end_date=" + endDate;
+    
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function(response) {
+        console.log(response)
+    })
+        $("#results-div").text(searchTerm)
+    })
+    
+    
+</script>
+</body>
+</html>
+
+
+
+Collapse 
+Message Input
+
+Message Carey Wu T/Th, Kyle T/Th

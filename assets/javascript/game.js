@@ -7,7 +7,7 @@ $(document).ready(function() {
     var timer = $("<p></p>");
     //Setting how many seconds on countdown timer
     var countdown = 40;
-    //Defining the variable "answers" which contains an array list of all the correct ':checked' answers for each question
+    //Defining the variable "answers" which contains an array list of all the correct ':checked' (name) answers for each question
     var answers = {
       question1: "blacksabbath",
       question2: "deeppurple",

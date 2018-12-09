@@ -18,23 +18,24 @@
 </head>
 	<!-- Body begins - all contents and visuals start-->
 	<body>
+		<!--Setting row in html with Bootstrap-->
 		<div class="row">
 			<!--Creating a div class and id "banner" for css style reference-->
 			<div class ="col-md-12" id="banner">
 				<!--Inserting main logo within the header (#banner)-->
 				<img src="assets/images/rocknroll.png" alt="logo">
 				<!--Inserting a "begin" button using bootstrap that functions with javascript-->
-	  			<button type="button" class="btn btn-danger" id="begin">Begin - Rock & Roll Trivia</button>   
+				<button type="button" class="btn btn-danger" id="begin">Begin - Rock & Roll Trivia</button>   
+				<button type="button" class="btn btn-primary" id="reset">Reset</button> 
 				</div>
 			</div>
 		</div>
 		<!--Inserting div defining id "scores" to reference in javascript-->
 		<div class="row" id="scores">	
 		</div>
-		<!--Inserting div defininf id "questionForm" to reference in javascript-->
+		<!--Inserting div defining id "questionForm" to reference in javascript-->
 		<div class="row" id="questionForm">
 			<!--Questions form div begins here-->
-				<ol>
 					<br>
 					<li>Which of these bands pioneered heavy metal and considered the fathers of "stoner rock"?</li>
 						<label><input type="radio" name="question1" value="lynyrd">Lynyrd Skynyrd</label>
@@ -103,8 +104,7 @@
 						<label><input type="radio" name="question12" value="wutangclan">WU-TANG CLAN</label>
 						<label><input type="radio" name="question12" value="nwa">N.W.A</label>
 						<label><input type="radio" name="question12" value="biggiesmalls">The Notorious B.I.G</label>
-						<label><input type="radio" name="question12" value="lamar">Kendrik Lamar</label>
-					</ol>						
+						<label><input type="radio" name="question12" value="lamar">Kendrik Lamar</label>						
 			</div>
 		</div>
 	</body>

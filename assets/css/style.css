@@ -1,7 +1,9 @@
+/*Setting Background image from local (css) folder*/
 body {
 	background-image: url("bguitar.jpg");
 }
 
+/* Logo PNG image set on top of the "header" div */
 .logo {
 	width: 30% ;
  	margin-left: -15%;
@@ -11,19 +13,14 @@ header {
 	font-size: 50px;
 }
 
+/*Banner image set where header is placed along with (.logo)*/
 #banner {
 	background-image: url("bgrocker.jpg");
 	color:white;
 	text-align: center;
 }
 
-#display {
-	color:white;
-	text-align: center;
-	font-size: 40px;
-	background-color: black;
-}
-
+/*Setting the trivia questions div, color, size, width, opacity & text (when revealed from on click #begin)*/
 #questionForm {
 	width: 50%;
 	height: 100%;
@@ -37,6 +34,7 @@ header {
 	font-style: bolder;
 }
 
+/*Styling for the scoreboard that reveals at the end of the countdown*/
 #scores {
 	background-color: white;
 	font-family: 'Rock Salt', cursive;
@@ -47,9 +45,4 @@ header {
 	font-size: 50px;
 	margin-top: 10px;
 	opacity: 0.5;
-}
-
-.counter {
-	color: black;
-	margin-left:20%;
 }

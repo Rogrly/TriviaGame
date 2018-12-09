@@ -22,6 +22,7 @@ $(document).ready(function() {
       question11: "pinkfloyd",
       question12: "wutangclan",
     }
+
   //Hides the score board from showing
   $("#scores").hide();
   //Hides the question form box
@@ -33,6 +34,8 @@ $(document).ready(function() {
   //When the player clicks on "begin" button
   //Reveal the question form and slide it down from the top div (#banner)
   $("#begin").click( function(){ 
+    //Log "answers" array into console - for user to find the correct answers
+    console.log (answers);
   $("#questionForm").slideDown(); // *Found ".slideDown()" from (https://www.w3schools.com/jquery/eff_slidedown.asp)
     //Setting an Interval function that will serve as a counter countdown
     setInterval(function() {

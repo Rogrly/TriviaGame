@@ -76,7 +76,8 @@ $(document).ready(function() {
             $("p").hide();
             //Implement and project the score board "Correct / Wrong" into the div id "scores" within the html
             $('#scores').html(" Correct: " + correct + "<br>");  
-            $('#scores').append(" Wrong: " + wrong); 
+            $('#scores').append(" Wrong: " + wrong + "<br>"); 
+            $('#scores').append("<b>Reveal answers in the console</b>")
             });
           }
   });
